@@ -77,11 +77,13 @@ body {
 }
 
 .wrapperTodo .content.cont {
-    background-color: #5C677D;
+    background-color: 
+    #5C677D;
+    padding: 20px;
     border-radius: 20px;
     height: 400px;
     overflow-y: scroll;
-    text-align: center;
+        text-align: center;
 }
 
 .wrapperTodo .content.cont .wrapperList .header{
@@ -93,6 +95,7 @@ body {
 .wrapperTodo .content.cont::-webkit-scrollbar{
     width: 5px;
 }
+
 
 .wrapperList .list{
     display: flex;
@@ -108,4 +111,15 @@ body {
 .wrapperList .list span{
     color: #efefef;
     font-family: var(--font3);
+}
+
+.wrapperList .list button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #5C0000;
+    border-radius: 10px;
+    color: #efefef;
+    font-family: var(--font1);
+    cursor: pointer;
 }
