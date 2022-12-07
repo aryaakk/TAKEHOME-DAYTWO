@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Kanit&family=Secular+One&display=swap');
+
+:root {
+    --font1: 'Jost', sans-serif;
+    --font2: 'Kanit', sans-serif;
+    --font3: 'Secular One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #001233;
+}
+
+.wrapperHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.wrapperHeader .header {
+    background-color: #023E7D;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.wrapperHeader .header span {
+    background-color: transparent;
+    font-family: var(--font2);
+    font-size: 35px;
+    font-weight: bold;
+    color: #efefef;
+    letter-spacing: 4px;
+}
+
+.wrapperTodo {
+    padding: 10% 0;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+}
+
+.wrapperTodo .content {
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.wrapperTodo .content.form {
+    background-color: #5C677D;
+    border-radius: 20px;
+}
+
+.wrapperForm .formInp {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.wrapperForm .formInp .itemForm.inp .textInp {
+    margin: 10px 0 15px 0;
+}
+
+.wrapperForm .formInp .itemForm .submit {
+    width: 100%;
+    background-color: #0466C8;
+    border: none;
+    font-family: var(--font3);
+    color: #efef;
+    font-size: 20px;
+    padding: 10px 0;
+    height: 50px;
+}
+
+.wrapperTodo .content.cont {
+    background-color: #5C677D;
+    border-radius: 20px;
+    height: 400px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.wrapperTodo .content.cont .wrapperList .header{
+    font-size: 20px;
+    font-family: var(--font2);
+    color: #efefef;
+}
+
+.wrapperTodo .content.cont::-webkit-scrollbar{
+    width: 5px;
+}
+
+.wrapperList .list{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    background-color: #012A4A;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.wrapperList .list span{
+    color: #efefef;
+    font-family: var(--font3);
+}

@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import Header from './component/Header';
+import TodoPages from './pages/todoPages';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<TodoPages/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
